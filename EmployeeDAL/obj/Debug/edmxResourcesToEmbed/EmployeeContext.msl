@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmployeeDBModelStoreContainer" CdmEntityContainer="EmployeeDBEntities">
+    <EntitySetMapping Name="DeptMasters">
+      <EntityTypeMapping TypeName="EmployeeDBModel.DeptMaster">
+        <MappingFragment StoreEntitySet="DeptMaster">
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpProfiles">
+      <EntityTypeMapping TypeName="EmployeeDBModel.EmpProfile">
+        <MappingFragment StoreEntitySet="EmpProfile">
+          <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_InsertDeptMaster" FunctionName="EmployeeDBModel.Store.sp_InsertDeptMaster" />
+    <FunctionImportMapping FunctionImportName="sp_InsertEmployeeProfile" FunctionName="EmployeeDBModel.Store.sp_InsertEmployeeProfile" />
+    <FunctionImportMapping FunctionImportName="sp_UpdateDeptMaster" FunctionName="EmployeeDBModel.Store.sp_UpdateDeptMaster" />
+    <FunctionImportMapping FunctionImportName="sp_UpdateEmployeeProfile" FunctionName="EmployeeDBModel.Store.sp_UpdateEmployeeProfile" />
+  </EntityContainerMapping>
+</Mapping>

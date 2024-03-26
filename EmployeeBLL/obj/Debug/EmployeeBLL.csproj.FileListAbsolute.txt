@@ -1,0 +1,15 @@
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EmployeeBLL.dll.config
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EmployeeBLL.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EmployeeBLL.pdb
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EntityFramework.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EntityFramework.xml
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\obj\Debug\EmployeeBLL.csproj.AssemblyReference.cache
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\obj\Debug\EmployeeBLL.csproj.CoreCompileInputs.cache
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\obj\Debug\EmployeeBLL.csproj.CopyComplete
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\obj\Debug\EmployeeBLL.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\obj\Debug\EmployeeBLL.pdb
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EmployeeDAL.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EmployeeDAL.pdb
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeBLL\bin\Debug\EmployeeDAL.dll.config

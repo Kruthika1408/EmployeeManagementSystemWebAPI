@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DeptMaster">
+    <Key>
+      <PropertyRef Name="DeptCode" />
+    </Key>
+    <Property Name="DeptCode" Type="Int32" Nullable="false" />
+    <Property Name="DeptName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="EmpProfiles" Relationship="Self.FK__EmpProfil__DeptC__5070F446" FromRole="DeptMaster" ToRole="EmpProfile" />
+  </EntityType>
+  <EntityType Name="EmpProfile">
+    <Key>
+      <PropertyRef Name="EmpCode" />
+    </Key>
+    <Property Name="EmpCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EmpName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DeptCode" Type="Int32" />
+    <NavigationProperty Name="DeptMaster" Relationship="Self.FK__EmpProfil__DeptC__5070F446" FromRole="EmpProfile" ToRole="DeptMaster" />
+  </EntityType>
+  <Association Name="FK__EmpProfil__DeptC__5070F446">
+    <End Role="DeptMaster" Type="Self.DeptMaster" Multiplicity="0..1" />
+    <End Role="EmpProfile" Type="Self.EmpProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DeptMaster">
+        <PropertyRef Name="DeptCode" />
+      </Principal>
+      <Dependent Role="EmpProfile">
+        <PropertyRef Name="DeptCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmployeeDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DeptMasters" EntityType="Self.DeptMaster" />
+    <EntitySet Name="EmpProfiles" EntityType="Self.EmpProfile" />
+    <AssociationSet Name="FK__EmpProfil__DeptC__5070F446" Association="Self.FK__EmpProfil__DeptC__5070F446">
+      <End Role="DeptMaster" EntitySet="DeptMasters" />
+      <End Role="EmpProfile" EntitySet="EmpProfiles" />
+    </AssociationSet>
+    <FunctionImport Name="sp_InsertDeptMaster">
+      <Parameter Name="p_DeptCode" Mode="In" Type="Int32" />
+      <Parameter Name="p_DeptName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_InsertEmployeeProfile">
+      <Parameter Name="p_EmpCode" Mode="In" Type="Int32" />
+      <Parameter Name="p_DateOfBirth" Mode="In" Type="DateTime" />
+      <Parameter Name="p_EmpName" Mode="In" Type="String" />
+      <Parameter Name="p_Email" Mode="In" Type="String" />
+      <Parameter Name="p_DeptCode" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_UpdateDeptMaster">
+      <Parameter Name="p_DeptCode" Mode="In" Type="Int32" />
+      <Parameter Name="p_DeptName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_UpdateEmployeeProfile">
+      <Parameter Name="p_EmpCode" Mode="In" Type="Int32" />
+      <Parameter Name="p_DateOfBirth" Mode="In" Type="DateTime" />
+      <Parameter Name="p_EmpName" Mode="In" Type="String" />
+      <Parameter Name="p_Email" Mode="In" Type="String" />
+      <Parameter Name="p_DeptCode" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,12 @@
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\bin\Debug\EmployeeDAL.dll.config
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\bin\Debug\EmployeeDAL.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\bin\Debug\EmployeeDAL.pdb
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\bin\Debug\EntityFramework.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\bin\Debug\EntityFramework.xml
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\obj\Debug\EmployeeDAL.csproj.AssemblyReference.cache
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\obj\Debug\EmployeeDAL.csproj.CoreCompileInputs.cache
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\obj\Debug\EmployeeDAL.csproj.CopyComplete
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\obj\Debug\EmployeeDAL.dll
+C:\Users\mmm\source\repos\EmployeeManagement\EmployeeDAL\obj\Debug\EmployeeDAL.pdb
